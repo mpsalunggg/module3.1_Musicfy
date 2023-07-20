@@ -13,7 +13,7 @@ const addPopularSongs = async (popularSong) => {
   await addData('popularSongs', popularSong)
 }
 
-async function generateCollection() {
+const generateCollection = async () => {
   try {
     await addSongs(songs)
     await addArtists(artists)
